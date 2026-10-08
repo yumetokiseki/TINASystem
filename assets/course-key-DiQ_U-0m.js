@@ -1,0 +1,1 @@
+import"./timeslot-CjnHi5Hk.js";function e(e){return e.program?.trim()||`大學部`}function t(t){return`${e(t)}|${t.name.trim()}`}function n(e,n,r){let i=t(n);return e.some(e=>e.id!==r&&t(e)===i)}function r(t){let n=new Map;for(let e of t)n.set(e.name,(n.get(e.name)??0)+1);return new Map(t.map(t=>[t.id,(n.get(t.name)??0)>1?`${t.name}（${e(t)}）`:t.name]))}export{e as i,r as n,n as r,t};
